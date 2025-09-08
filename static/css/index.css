@@ -103,6 +103,13 @@ body {
   padding: 4rem 1.5rem;
 }
 
+.hero-body.is-light {
+  /* padding: 4rem 1.5rem; */
+  background: var(--background-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
 .teaser .hero-body {
   padding-top: 2rem;
   padding-bottom: 4rem;
