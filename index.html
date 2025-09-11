@@ -10,9 +10,11 @@
   <meta name="title" content="Imagining Alternatives: Towards High-Resolution 3D Counterfactual
                 Medical Image Generation via Language Guidance - AUTHOR_NAMES">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="The first high-resolution, text-guided 3D counterfactual medical image generation method of synthetic subjects">
+  <meta name="description"
+    content="The first high-resolution, text-guided 3D counterfactual medical image generation method of synthetic subjects">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="Vision-Language Models, Counterfactual Image Synthesis, Generative Models, 3D Medical Imaging">
+  <meta name="keywords"
+    content="Vision-Language Models, Counterfactual Image Synthesis, Generative Models, 3D Medical Imaging">
   <!-- TODO: List all authors -->
   <meta name="author" content="M. Mohamed et al.">
   <meta name="robots" content="index, follow">
@@ -52,7 +54,8 @@
   <meta name="twitter:title" content="Imagining Alternatives: Towards High-Resolution 3D Counterfactual
                 Medical Image Generation via Language Guidance">
   <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="The first high-resolution, text-guided 3D counterfactual medical image generation method of synthetic subjects">
+  <meta name="twitter:description"
+    content="The first high-resolution, text-guided 3D counterfactual medical image generation method of synthetic subjects">
   <!-- TODO: Same as social preview image above -->
   <!-- <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png"> -->
   <meta name="twitter:image:alt" content="Imagining Alternatives: Towards High-Resolution 3D Counterfactual
@@ -233,15 +236,16 @@
                 <span class="author-block">
                   <a href="https://cim.mcgill.ca/~arbel/" target="_blank">Tal Arbel</a>
                 </span>
-<span class="author-block">
-  McGill University, MILA Quebec AI Institute
-  <br>
-  <small>
-    <a href="https://hula-ai.github.io/LLM-MI-MICCAI-2025/" target="_blank" style="color:#222 !important;">
-      MICCAI 2025 ELAMI Workshop (Oral)
-    </a>
-  </small>
-</span>
+                <span class="author-block">
+                  McGill University, MILA Quebec AI Institute
+                  <br>
+                  <small>
+                    <a href="https://hula-ai.github.io/LLM-MI-MICCAI-2025/" target="_blank"
+                      style="color:#222 !important;">
+                      MICCAI 2025 ELAMI Workshop (Oral)
+                    </a>
+                  </small>
+                </span>
               </div>
 
               <div class="column has-text-centered">
@@ -304,6 +308,28 @@
     </section> -->
     <!-- End teaser video -->
 
+    <!-- Teaser gif/slider -->
+    <!-- Patient Frames Slider Section -->
+    <section class="section hero is-light" data-aos="fade-up">
+      <div class="container">
+
+        <div class="hero-body">
+          <div class="container" style="max-width: 1100px; text-align: center;">
+            <h2 class="title is-3">CF Volumes</h2>
+            <div>
+              <img id="patient-frame-img" src="static/images/3DFigures/patient_frames/32.png" alt="Patient Frame"
+                style="max-width:100%;height:auto;" loading="lazy" />
+            </div>
+            <input type="range" id="patient-frame-slider" min="0" max="63" value="32"
+              style="width:100%;margin-top:1em;">
+            <div>
+              <span id="frame-label">Slice: 32</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Patient Frames Slider Section -->
 
     <!-- Paper abstract -->
     <section class="section hero is-light" data-aos="fade-up">
@@ -314,7 +340,16 @@
             <div class="content has-text-justified">
               <!-- TODO: Replace with your paper abstract -->
               <p>
-                Vision-language models have demonstrated impressive capa-
+                Vision-language models have shown strong performance in 2D image generation due to large pretrained
+                foundations, but comparable models for 3D are lacking, limiting progress in medical imaging. This
+                absence restricts applications such as counterfactual explanations, disease progression simulations, and
+                medical training. We present a framework that generates high-resolution 3D counterfactual medical images
+                from free-form language prompts by adapting state-of-the-art 3D diffusion models with enhanced text
+                conditioning. To our knowledge, this is the first language-guided native-3D diffusion model applied to
+                neurological imaging, enabling faithful representation of brain structures. Experiments on MRI datasets
+                demonstrate the ability to simulate lesion loads in Multiple Sclerosis and cognitive states in
+                Alzheimer’s disease, producing realistic images while preserving synthesized subject fidelity. Our work
+                establishes a foundation for prompt-driven disease progression analysis in 3D medical imaging. <!-- Vision-language models have demonstrated impressive capa-
                 bilities in generating 2D images under various conditions; however the
                 impressive performance of these models in 2D is largely enabled by ex-
                 tensive, readily available pretrained foundation models. Critically, com-
@@ -342,6 +377,7 @@
                 subject fidelity in synthetically generated medical images. Our results lay
                 the groundwork for prompt-driven disease progression analysis within 3D
                 medical imaging.
+                 -->
               </p>
             </div>
           </div>
@@ -441,13 +477,22 @@
                 space, delivers superior subject preservation, image quality, and text alignment compared to
                 conventional latent diffusion approaches. Additionally, the MAISI RFlow model, which incorporates a
                 Rectified Flow noise schedule, significantly improves anatomical consistency and image fidelity while
-                achieving computational efficiency. Qualitative and quantitative analyses clearly indicate the
+                achieving computational efficiency.
+
+                Qualitative and quantitative analyses clearly indicate the
+                effectiveness of these models in simulating nuanced disease-progression scenarios in synthetic patients,
+                and our ablation studies on classifier-free guidance underscore the
+                explicit trade-offs between prompt fidelity and anatomical accuracy.
+
+                <!-- Qualitative and quantitative analyses clearly indicate the
                 effectiveness of these models in simulating nuanced disease-progression scenarios in synthetic Multiple
                 Sclerosis and Alzheimer's patients, and our ablation studies on classifier-free guidance underscore the
-                explicit trade-offs between prompt fidelity and anatomical accuracy. Ultimately, our contributions lay
+                explicit trade-offs between prompt fidelity and anatomical accuracy.  -->
+
+                <!-- Ultimately, our contributions lay
                 essential groundwork for future extensions towards generating personalized counterfactual medical images
                 from real patient data, with potential implications for enhanced clinical decision-making, personalized
-                disease modeling, and medical education within 3D neurological imaging.
+                disease modeling, and medical education within 3D neurological imaging. -->
               </p>
             </div>
           </div>

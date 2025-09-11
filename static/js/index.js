@@ -1,5 +1,19 @@
 window.HELP_IMPROVE_VIDEOJS = false;
 
+// Slider Functionality for Patient Frames
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.getElementById('patient-frame-slider');
+  const img = document.getElementById('patient-frame-img');
+  const label = document.getElementById('frame-label');
+  if (slider && img && label) {
+    slider.addEventListener('input', function () {
+      const frame = slider.value;
+      img.src = `static/images/3DFigures/patient_frames/${frame}.png`;
+      label.textContent = `Slice: ${frame}`;
+    });
+  }
+});
+
 // More Works Dropdown Functionality
 function toggleMoreWorks() {
     const dropdown = document.getElementById('moreWorksDropdown');
