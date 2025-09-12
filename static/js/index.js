@@ -5,10 +5,20 @@ document.addEventListener('DOMContentLoaded', function () {
   const slider = document.getElementById('patient-frame-slider');
   const img = document.getElementById('patient-frame-img');
   const label = document.getElementById('frame-label');
+  const NUM_FRAMES = 64;
+  const imageCache = [];
+
+  // Preload images
+  for (let i = 0; i < NUM_FRAMES; i++) {
+    const image = new Image();
+    image.src = `static/images/3DFigures/patient_frames/${i}.png`;
+    imageCache.push(image);
+  }
+
   if (slider && img && label) {
     slider.addEventListener('input', function () {
       const frame = slider.value;
-      img.src = `static/images/3DFigures/patient_frames/${frame}.png`;
+      img.src = imageCache[frame].src;
       label.textContent = `Slice: ${frame}`;
     });
   }
