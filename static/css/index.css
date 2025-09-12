@@ -357,7 +357,7 @@ body {
 
 .footer .content {
   color: var(--text-secondary);
-  line-height: 1.7;
+  /* line-height: 1.7; */
 }
 
 .footer a {

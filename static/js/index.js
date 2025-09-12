@@ -148,11 +148,11 @@ $(document).ready(function() {
 
     var options = {
 		slidesToScroll: 1,
-		slidesToShow: 1,
+		slidesToShow: 2,
 		loop: true,
 		infinite: true,
-		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplay: false,
+		autoplaySpeed: 10000, // 10 seconds
     }
 
 	// Initialize all div with carousel class
